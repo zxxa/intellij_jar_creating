@@ -15,12 +15,13 @@
     <output-path>$PROJECT_DIR$/example_jar_output_path</output-path>
     <root id="archive" name="name.jar">
       <element id="directory" name="META-INF">
- #directory for META-INF 
+ # directory for META-INF 
         <element id="file-copy" path="$PROJECT_DIR$/your_dir/META-INF/MANIFEST.MF" /> 
       </element>
       <element id="module-output" name="module1_name" />
       <element id="module-output" name="module2_name" />
- #if you have resources you get them for exmaple with getClass().getClassLoader().getResource("resource_name")
+ # if you have resources you get them for exmaple with getClass().getClassLoader().getResource("resource_name")
+ # $PROJECT_DIR$/src/main/resources is the most probable path for your resources
       <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />  
     </root>
   </artifact>
